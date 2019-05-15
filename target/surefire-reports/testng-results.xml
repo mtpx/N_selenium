@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-05-15T07:37:36Z" name="tests" finished-at="2019-05-15T07:38:10Z" duration-ms="34240">
+    <groups>
+    </groups>
+    <test started-at="2019-05-15T07:37:36Z" name="tests" finished-at="2019-05-15T07:38:10Z" duration-ms="34240">
+      <class name="Tests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests@45394b31]" started-at="2019-05-15T07:37:36Z" name="setUp" finished-at="2019-05-15T07:37:42Z" duration-ms="6380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Tests@45394b31]" started-at="2019-05-15T07:37:42Z" name="beforeTest" finished-at="2019-05-15T07:37:42Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="test001_logowanie()[pri:1, instance:Tests@45394b31]" started-at="2019-05-15T07:37:43Z" name="test001_logowanie" description="Logowanie" finished-at="2019-05-15T07:37:57Z" duration-ms="14210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test001_logowanie -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Tests@45394b31]" started-at="2019-05-15T07:37:57Z" name="beforeTest" finished-at="2019-05-15T07:37:57Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="test002_fillExpertsApplication()[pri:1, instance:Tests@45394b31]" started-at="2019-05-15T07:37:57Z" name="test002_fillExpertsApplication" finished-at="2019-05-15T07:38:09Z" duration-ms="12092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test002_fillExpertsApplication -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests@45394b31]" started-at="2019-05-15T07:38:09Z" name="teardown" finished-at="2019-05-15T07:38:10Z" duration-ms="855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Tests -->
+    </test> <!-- tests -->
+  </suite> <!-- tests -->
+</testng-results>
