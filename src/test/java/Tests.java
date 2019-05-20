@@ -1,3 +1,4 @@
+import com.github.javafaker.Faker;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
@@ -12,11 +13,13 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import pages.*;
 import utils.Constant;
 
+
+import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 public class Tests {
     public WebDriver driver;
-
+    Faker faker = new Faker();
 
 
     @BeforeClass
@@ -30,7 +33,9 @@ public class Tests {
         driver  = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
+
         // BasicConfigurator.configure();
+
 
     }
     @BeforeMethod
@@ -71,32 +76,46 @@ public class Tests {
     //@Parameters({ "name", "phone", "password", "001regFeedback", "blankValidationError" })
     public void test002_fillExpertsApplication(/*String name, String password, String password*/) throws Exception {
 
-        // 1. Przejście do logowania
+        // 1. Przejście do programow
+        HomePage objHomePage = new HomePage(driver);
+      //  objHomePage.clickPrograms();
 
         Applications objApplications = new Applications(driver);
-        objApplications.clickPrograms();
         objApplications.clickFillExpertsApplication();
 
         ExpertsApplication objExpertsApplication = new ExpertsApplication(driver);
-        //objExpertsApplication.clickPolishLanguageCheckbox();
-        //objExpertsApplication.clickInterestedInNawaCheckbox();
-        //objExpertsApplication.selectRandomNawaProgram();
-
+        objExpertsApplication.clickPolishLanguageCheckbox();
         objExpertsApplication.clickSubmitApplicationButton();
-
-
-
+        objExpertsApplication.clickSavingDraftTitleCloseButton();
         Assert.assertEquals(objExpertsApplication.getvalidationErrorDialogBoxLabelText(),"Występują błędy walidacji. Proszę sprawdzić, czy wszystkie pola zostały wypełnione poprawnie.");
         objExpertsApplication.clickOkOnValidationErrorDialogBox();
 
         Assert.assertEquals(objExpertsApplication.getBottomErrorHeaderText(),"Twój formularz zawiera 1 lub więcej błędów");
+        objExpertsApplication.clickInterestedInNawaCheckbox();
+        objExpertsApplication.selectRandomNawaProgram();
+        objExpertsApplication.selectSecondRandomNawaProgram();
+
+        objExpertsApplication.setAcademicTitle(faker.streetSuffix());
+        objExpertsApplication.setPhoneNumber("123456987");
+        objExpertsApplication.selectRandomThematicScopeProgram();
+        objExpertsApplication.selectRandomEnglishLevel();
+        objExpertsApplication.clickRequiredCheckboxes();
 
 
+
+        objExpertsApplication.clickSaveAsCopyButton();
+        Thread.sleep(3000);
+        objExpertsApplication.waitForDraftSavedTitleToDisappear();
+        objExpertsApplication.clickMyApplications();
+        objHomePage.clickDeleteFirstApplication();
+        objHomePage.clickConfirmDeleteApplication();
 
         Thread.sleep(4000);
 
-
     }
+
+
+
     @AfterClass
     public void teardown() {
         if (driver != null) {

@@ -28,7 +28,7 @@ public class Login extends _TestBase {
         this.password.sendKeys(password);
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", loginButton);
-        loginButton.click();
+        verifyAndClick(loginButton);
     }
 
     @Step("Pobieranie wiadomosci z bledem logowania")

@@ -1,17 +1,16 @@
 package pages;
 
 import io.qameta.allure.Step;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.*;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
 public class _TestBase {
-    WebDriver driver;
-    WebDriverWait wait;
+    public WebDriver driver;
+    public WebDriverWait wait;
     public _TestBase(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -30,10 +29,14 @@ public class _TestBase {
     public void clickLogin(){
         login.click();
     }
+
+    @Step("Przejscie na podstrone 'programy'")
     public void clickPrograms(){
         applicationsMenu.get(0).click();
     }
-    public void clickApplications(){
+
+
+    public void clickMyApplications(){
         applicationsMenu.get(1).click();
     }
     public void clickDocuments(){
@@ -44,6 +47,34 @@ public class _TestBase {
     }
     public void clickNotification(){
         applicationsMenu.get(4).click();
+    }
+
+
+
+
+    public boolean verifyAndClick(WebElement element) {
+        boolean result = false;
+        int attempts = 0;
+        while(attempts < 2) {
+            try {
+                element.click();
+                result = true;
+                break;
+            } catch(StaleElementReferenceException e) {
+                System.out.println("StaleElementReferenceException occured , retrying in 100 ms ");
+            } catch (NoSuchElementException e){
+                System.out.println("NoSuchElementException occured, retrying in 100 ms ");
+            } catch (ElementClickInterceptedException e){
+                System.out.println("ElementClickInterceptedException occured, retrying in 100 ms ");
+        }
+            try {
+                Thread.sleep(150);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            attempts++;
+        }
+        return result;
     }
 
 }
