@@ -17,6 +17,8 @@ import utils.Constant;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
+import static utils.Utils.*;
+
 public class Tests {
     public WebDriver driver;
     Faker faker = new Faker();
@@ -104,11 +106,66 @@ public class Tests {
 
 
         objExpertsApplication.clickSaveAsCopyButton();
-        Thread.sleep(3000);
-        objExpertsApplication.waitForDraftSavedTitleToDisappear();
+        //objExpertsApplication.waitForDraftSavedTitleToDisappear();
+        Thread.sleep(4000);
         objExpertsApplication.clickMyApplications();
         objHomePage.clickDeleteFirstApplication();
         objHomePage.clickConfirmDeleteApplication();
+
+        Thread.sleep(4000);
+
+    }
+
+
+    @Test (enabled=true, priority=1)
+    //@Parameters({ "name", "phone", "password", "001regFeedback", "blankValidationError" })
+    public void test003_fillPolishLanguagePromotion(/*String name, String password, String password*/) throws Exception {
+
+        // 1. Przejście do programow
+        HomePage objHomePage = new HomePage(driver);
+        objHomePage.clickPrograms();
+
+        Applications objApplications = new Applications(driver);
+        objApplications.clickFillPolishLanguagePromotion();
+
+        PolishLanguagePromotion objPolishLanguagePromotion = new PolishLanguagePromotion(driver);
+        objPolishLanguagePromotion.setProjectRealizationPlace(faker.streetSuffix());
+        objPolishLanguagePromotion.clickNextPageOfApplication();
+
+        objPolishLanguagePromotion.selectRandomUnitStatus();
+        objPolishLanguagePromotion.selectRandomUnitFullName();
+        objPolishLanguagePromotion.setNip("1165830299");
+        objPolishLanguagePromotion.setUnitForm(faker.streetSuffix());
+        objPolishLanguagePromotion.setDetailsOfPersonSubmittingApplication(faker.country(), "794350654");
+        objPolishLanguagePromotion.selectRandomAuthorizationToSendApplication();
+        objPolishLanguagePromotion.setContactPerson(faker.firstName(), faker.lastName(), faker.country(),"xxx@asd.pl","794350654");
+        objPolishLanguagePromotion.setFinanceContactPerson(faker.firstName(), faker.lastName(), faker.country(),"xxx@asd.pl","794350654");
+        objPolishLanguagePromotion.setDescriptionOfApplicant(getLongDescription());
+        objPolishLanguagePromotion.setExperienceOfApplicant(generateRandomString(1010));
+        objPolishLanguagePromotion.clickNextPageOfApplication();
+
+        objPolishLanguagePromotion.clickNextPageOfApplication();
+        objPolishLanguagePromotion.setProjectTitle(generateRandomString(15));
+        objPolishLanguagePromotion.setProjectStartDate("2019-10-09");
+        objPolishLanguagePromotion.setProjectEndDate("2020-02-09");
+        objPolishLanguagePromotion.setShortProjectDescription(generateRandomString(1010));
+        objPolishLanguagePromotion.setProjectAnalysis(generateRandomString(1010));
+        objPolishLanguagePromotion.setProjectInnovation(generateRandomString(1010));
+        objPolishLanguagePromotion.setTargetGroupDescription(generateRandomString(1010));
+        objPolishLanguagePromotion.setProjectResults(generateRandomString(1010));
+        objPolishLanguagePromotion.setProjectSchedule(generateRandomString(1010));
+        objPolishLanguagePromotion.setProjectManagement(generateRandomString(15));
+        objPolishLanguagePromotion.setProjectEquality(generateRandomString(15));
+        objPolishLanguagePromotion.setProjectMonitoring(generateRandomString(15));
+        objPolishLanguagePromotion.setProjectEvaluation(generateRandomString(15));
+        objPolishLanguagePromotion.setRiskDescription(generateRandomString(15));
+        objPolishLanguagePromotion.selectRandomRiskProbability();
+        objPolishLanguagePromotion.selectRandomRiskImpact();
+        objPolishLanguagePromotion.setRiskPrevention(generateRandomString(15));
+        objPolishLanguagePromotion.setRiskImpactMinimalization(generateRandomString(15));
+
+
+
 
         Thread.sleep(4000);
 

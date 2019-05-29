@@ -5,7 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
+import static utils.Utils.*;
 import java.util.List;
 
 public class Login extends _TestBase {
@@ -28,7 +28,7 @@ public class Login extends _TestBase {
         this.password.sendKeys(password);
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", loginButton);
-        verifyAndClick(loginButton);
+        safeClick(loginButton);
     }
 
     @Step("Pobieranie wiadomosci z bledem logowania")

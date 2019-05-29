@@ -1,14 +1,14 @@
 package pages;
 import io.qameta.allure.Step;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
+
 import java.util.List;
-import java.util.Random;
+
+import static utils.Utils.*;
+
 
 public class ExpertsApplication extends _TestBase {
     public ExpertsApplication(WebDriver driver){
@@ -42,9 +42,9 @@ public class ExpertsApplication extends _TestBase {
 
     //8. Oswiadczenia
 
-    @FindBy (css="#o0section-13-control≡grid-18-grid≡statement1-control .xforms-deselected") WebElement dataProcessingCheckbox;
-    @FindBy (css="#o0section-79-control≡grid-19-grid≡statement2-control .xforms-deselected") WebElement trueInformationCheckbox;
-    @FindBy (css="#o0section-79-control≡grid-19-grid≡statement3-control .xforms-deselected") WebElement dataConfidentialityCheckbox;
+    @FindBy (css="#o0section-13-control≡grid-18-grid≡statement1-control .xforms-deselected .checkbox") WebElement dataProcessingCheckbox;
+    @FindBy (css="#o0section-79-control≡grid-19-grid≡statement2-control .xforms-deselected .checkbox") WebElement trueInformationCheckbox;
+    @FindBy (css="#o0section-79-control≡grid-19-grid≡statement3-control .xforms-deselected .checkbox") WebElement dataConfidentialityCheckbox;
     @FindBy (xpath="//span[@class='xforms-deselected']") WebElement deselect;
 
 
@@ -69,9 +69,8 @@ public class ExpertsApplication extends _TestBase {
     //form functions
     @Step("Polski jezyk formularza")
     public void clickPolishLanguageCheckbox() throws InterruptedException {
-        Thread.sleep(6000);
        // driver.findElement(By.id("o0section-15-control≡grid-1-grid≡choose_language-control≡≡e0")).click();
-        verifyAndClick(polishLanguageCheckbox);
+        safeClick(polishLanguageCheckbox);
         //languages.get(1).click();
     }
 
@@ -82,8 +81,7 @@ public class ExpertsApplication extends _TestBase {
 
     @Step("Zainteresowany wspolpraca z NAWA")
     public void clickInterestedInNawaCheckbox() {
-        wait.until(ExpectedConditions.elementToBeClickable(interestedInNawaCheckbox));
-        verifyAndClick(interestedInNawaCheckbox);
+        safeClick(interestedInNawaCheckbox);
     }
 
     @Step("Mam kod aktywacyjny od NAWA")
@@ -93,24 +91,13 @@ public class ExpertsApplication extends _TestBase {
 
     @Step("Wybor losowego programu NAWA")
     public void selectRandomNawaProgram(){
-        Select dropdown = new Select(nawaProgramsSelect);
-        List<WebElement> l = dropdown.getOptions();
-        Random randomGenerator = new Random();
-        int randomInt = randomGenerator.nextInt(l.size()-1) + 1;
-        System.out.println((randomInt));
-        dropdown.selectByIndex(randomInt);
+        safeSelectRandomValueFromDropdown(nawaProgramsSelect);
     }
 
     @Step("Wybor drugiego losowego programu NAWA")
     public void selectSecondRandomNawaProgram(){
-        verifyAndClick(addNextNawaProgramButton);
-        wait.until(ExpectedConditions.elementToBeClickable(nawaSecondProgramsSelect));
-        Select dropdown = new Select(nawaSecondProgramsSelect);
-        List<WebElement> l = dropdown.getOptions();
-        Random randomGenerator = new Random();
-        int randomInt = randomGenerator.nextInt(l.size()-1) + 1;
-        System.out.println((randomInt));
-        dropdown.selectByIndex(randomInt);
+        safeClick(addNextNawaProgramButton);
+        safeSelectRandomValueFromDropdown(nawaSecondProgramsSelect);
     }
 
     @Step("Ustawienie numeru telefonu {1}")
@@ -128,40 +115,28 @@ public class ExpertsApplication extends _TestBase {
 
     @Step("Ustawienie tytulu akademickiego {1}")
     public void setAcademicTitle(String academicTitleInput){
-        this.academicTitleInput.clear();
-        this.academicTitleInput.sendKeys(academicTitleInput);
+     /*   this.academicTitleInput.clear();
+        this.academicTitleInput.sendKeys(academicTitleInput);*/
+     safeSendKeys(this.academicTitleInput, academicTitleInput );
+
     }
 
 
     @Step("Wybor losowego zakresu tematycznego")
     public void selectRandomThematicScopeProgram(){
-        Select dropdown = new Select(thematicScopeSelect);
-        List<WebElement> l = dropdown.getOptions();
-        Random randomGenerator = new Random();
-        int randomInt = randomGenerator.nextInt(l.size()-1) + 1;
-       // System.out.println((randomInt));
-        dropdown.selectByIndex(randomInt);
+        safeSelectRandomValueFromDropdown(thematicScopeSelect);
     }
 
     @Step("Wybor losowego poziomu jezyka")
     public void selectRandomEnglishLevel(){
-        Select dropdown = new Select(englishLevelSelect);
-        List<WebElement> l = dropdown.getOptions();
-        System.out.println(l);
-        Random randomGenerator = new Random();
-        int randomInt = randomGenerator.nextInt(l.size()-1) + 1;
-       // System.out.println((randomInt));
-        dropdown.selectByIndex(randomInt);
+        safeSelectRandomValueFromDropdown(englishLevelSelect);
     }
 
     @Step("Zaznaczenie wymaganych checkboxow")
     public void clickRequiredCheckboxes() throws InterruptedException {
-        wait.until(ExpectedConditions.elementToBeClickable(dataProcessingCheckbox));
-        verifyAndClick(dataProcessingCheckbox);
-        wait.until(ExpectedConditions.elementToBeClickable(trueInformationCheckbox));
-        verifyAndClick(trueInformationCheckbox);
-        wait.until(ExpectedConditions.elementToBeClickable(dataConfidentialityCheckbox));
-        verifyAndClick(dataConfidentialityCheckbox);
+        safeClick(dataProcessingCheckbox);
+        safeClick(trueInformationCheckbox);
+        safeClick(dataConfidentialityCheckbox);
     }
 
 
@@ -169,17 +144,17 @@ public class ExpertsApplication extends _TestBase {
 
     @Step("Wyslij aplikacje")
     public void clickSubmitApplicationButton() {
-        verifyAndClick(submitApplicationButton);
+        safeClick(submitApplicationButton);
     }
 
     @Step("Zapisz kopie robocza")
     public void clickSaveAsCopyButton() {
-        verifyAndClick(saveAsCopyButton);
+        safeClick(saveAsCopyButton);
     }
 
     @Step("Szkic zostal zapisany - zamkniecie boxa")
     public void clickSavingDraftTitleCloseButton() {
-        verifyAndClick(savingDraftTitleCloseButton);
+        safeClick(savingDraftTitleCloseButton);
     }
 
     //validation functions

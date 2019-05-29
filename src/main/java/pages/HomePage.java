@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
+import static utils.Utils.*;
 public class HomePage extends _TestBase {
     public HomePage(WebDriver driver){
         super(driver);
@@ -23,12 +23,12 @@ public class HomePage extends _TestBase {
     @Step("Usun pierwszy wniosek")
     public void clickDeleteFirstApplication() {
         wait.until(ExpectedConditions.visibilityOf(deleteFirstApplicationButton));
-        verifyAndClick(deleteFirstApplicationButton);
+        safeClick(deleteFirstApplicationButton);
     }
 
     @Step("Potwierdzenie usuniecia wniosku")
     public void clickConfirmDeleteApplication() {
-        verifyAndClick(confirmDeleteApplicationButton);
+        safeClick(confirmDeleteApplicationButton);
     }
 
 }

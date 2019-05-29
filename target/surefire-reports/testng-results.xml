@@ -2,52 +2,54 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-05-16T07:51:49Z" name="tests" finished-at="2019-05-16T07:52:22Z" duration-ms="32652">
+  <suite started-at="2019-05-20T10:56:22Z" name="tests" finished-at="2019-05-20T10:57:10Z" duration-ms="47365">
     <groups>
     </groups>
-    <test started-at="2019-05-16T07:51:49Z" name="tests" finished-at="2019-05-16T07:52:22Z" duration-ms="32652">
+    <test started-at="2019-05-20T10:56:22Z" name="tests" finished-at="2019-05-20T10:57:10Z" duration-ms="47365">
       <class name="Tests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests@5467eea4]" started-at="2019-05-16T07:51:49Z" name="setUp" finished-at="2019-05-16T07:51:58Z" duration-ms="9000" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests@77ee25f1]" started-at="2019-05-20T10:56:22Z" name="setUp" finished-at="2019-05-20T10:56:30Z" duration-ms="7272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Tests@5467eea4]" started-at="2019-05-16T07:51:58Z" name="beforeTest" finished-at="2019-05-16T07:51:58Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Tests@77ee25f1]" started-at="2019-05-20T10:56:30Z" name="beforeTest" finished-at="2019-05-20T10:56:30Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="test001_logowanie()[pri:1, instance:Tests@5467eea4]" started-at="2019-05-16T07:51:59Z" name="test001_logowanie" description="Logowanie" finished-at="2019-05-16T07:52:14Z" duration-ms="15095" status="PASS">
+        <test-method signature="test001_logowanie()[pri:1, instance:Tests@77ee25f1]" started-at="2019-05-20T10:56:30Z" name="test001_logowanie" description="Logowanie" finished-at="2019-05-20T10:56:46Z" duration-ms="15968" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test001_logowanie -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Tests@5467eea4]" started-at="2019-05-16T07:52:14Z" name="beforeTest" finished-at="2019-05-16T07:52:14Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Tests@77ee25f1]" started-at="2019-05-20T10:56:46Z" name="beforeTest" finished-at="2019-05-20T10:56:46Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="test002_fillExpertsApplication()[pri:1, instance:Tests@5467eea4]" started-at="2019-05-16T07:52:14Z" name="test002_fillExpertsApplication" finished-at="2019-05-16T07:52:21Z" duration-ms="6799" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method signature="test002_fillExpertsApplication()[pri:1, instance:Tests@77ee25f1]" started-at="2019-05-20T10:56:46Z" name="test002_fillExpertsApplication" finished-at="2019-05-20T10:57:09Z" duration-ms="22620" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[stale element reference: element is not attached to the page document
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#o0section-5-control≡grid-156-grid≡thematic_scope1-control≡select1≡≡c⊙1"}
   (Session info: chrome=74.0.3729.157)
   (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: '3E-WA-0105', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\mkrasny\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55530}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.157, webStorageEnabled: true}
-Session ID: 9c1090cba0814379b2e27e9f3bff8160]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\mkrasny\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60701}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.157, webStorageEnabled: true}
+Session ID: 55ed8abcb6321f8a03391f5123c198e0
+*** Element info: {Using=css selector, value=#o0section-5-control≡grid-156-grid≡thematic_scope1-control≡select1≡≡c⊙1}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#o0section-5-control≡grid-156-grid≡thematic_scope1-control≡select1≡≡c⊙1"}
   (Session info: chrome=74.0.3729.157)
   (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: '3E-WA-0105', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\mkrasny\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55530}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.157, webStorageEnabled: true}
-Session ID: 9c1090cba0814379b2e27e9f3bff8160
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\mkrasny\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60701}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.157, webStorageEnabled: true}
+Session ID: 55ed8abcb6321f8a03391f5123c198e0
+*** Element info: {Using=css selector, value=#o0section-5-control≡grid-156-grid≡thematic_scope1-control≡select1≡≡c⊙1}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -60,12 +62,16 @@ at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttp
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:134)
-at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:292)
-at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:172)
-at pages.ExpertsApplication.selectSecondRandomNawaProgram(ExpertsApplication.java:107)
-at Tests.test002_fillExpertsApplication(Tests.java:89)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy19.getTagName(Unknown Source)
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:45)
+at pages.ExpertsApplication.selectRandomThematicScopeProgram(ExpertsApplication.java:138)
+at Tests.test002_fillExpertsApplication(Tests.java:100)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -96,11 +102,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test002_fillExpertsApplication -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests@5467eea4]" started-at="2019-05-16T07:52:21Z" name="teardown" finished-at="2019-05-16T07:52:22Z" duration-ms="1064" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests@77ee25f1]" started-at="2019-05-20T10:57:09Z" name="teardown" finished-at="2019-05-20T10:57:10Z" duration-ms="841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
