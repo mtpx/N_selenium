@@ -62,8 +62,8 @@ public class Tests {
         Login objLogin = new Login(driver);
 
         objLogin.login("","");
-    //    Assert.assertEquals(objLogin.getErrorMessage(), "Pole Email jest wymagane.");
-    //    Assert.assertEquals(objLogin.getSecondErrorMessage(), "Pole Hasło jest wymagane.");
+        Assert.assertEquals(objLogin.getErrorMessage(), "Pole Email jest wymagane.");
+        Assert.assertEquals(objLogin.getSecondErrorMessage(), "Pole Hasło jest wymagane.");
 
         // 3. Poprawne logowanie
 

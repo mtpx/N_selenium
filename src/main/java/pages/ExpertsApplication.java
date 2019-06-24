@@ -1,9 +1,11 @@
 package pages;
 import io.qameta.allure.Step;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 
 import java.util.List;
 
@@ -42,10 +44,12 @@ public class ExpertsApplication extends _TestBase {
 
     //8. Oswiadczenia
 
-    @FindBy (css="#o0section-13-control≡grid-18-grid≡statement1-control .xforms-deselected .checkbox") WebElement dataProcessingCheckbox;
-    @FindBy (css="#o0section-79-control≡grid-19-grid≡statement2-control .xforms-deselected .checkbox") WebElement trueInformationCheckbox;
-    @FindBy (css="#o0section-79-control≡grid-19-grid≡statement3-control .xforms-deselected .checkbox") WebElement dataConfidentialityCheckbox;
-    @FindBy (xpath="//span[@class='xforms-deselected']") WebElement deselect;
+    @FindBy (xpath="//span[@id='o0section-13-control≡grid-18-grid≡statement1-control']//label[@class='checkbox']") WebElement dataProcessingCheckbox;
+    @FindBy (xpath="//span[@id='o0section-79-control≡grid-19-grid≡statement2-control']//label[@class='checkbox']") WebElement trueInformationCheckbox;
+    @FindBy (xpath="//span[@id='o0section-79-control≡grid-19-grid≡statement3-control']//label[@class='checkbox']") WebElement dataConfidentialityCheckbox;
+    @FindBy (xpath="//span[@id='o0section-13-control≡grid-18-grid≡statement1-control']//label[@class='checkbox']/..") WebElement dataProcessingCheckboxStatus;
+    @FindBy (xpath="//span[@id='o0section-79-control≡grid-19-grid≡statement2-control']//label[@class='checkbox']/..") WebElement trueInformationCheckboxStatus;
+    @FindBy (xpath="//span[@id='o0section-79-control≡grid-19-grid≡statement3-control']//label[@class='checkbox']/..") WebElement dataConfidentialityCheckboxStatus;
 
 
 
@@ -134,9 +138,32 @@ public class ExpertsApplication extends _TestBase {
 
     @Step("Zaznaczenie wymaganych checkboxow")
     public void clickRequiredCheckboxes() throws InterruptedException {
+
+   /*     if((driver.findElement((By.xpath("//span[@id='o0section-13-control≡grid-18-grid≡statement1-control']//label[@class='checkbox']/.."))).getAttribute("class"))=="xforms-selected"){
+            System.out.println("Zaznaczony");}
+        else if((driver.findElement((By.xpath("//span[@id='o0section-13-control≡grid-18-grid≡statement1-control']//label[@class='checkbox']/.."))).getAttribute("class"))=="xforms-deselected") {
+            System.out.println("Nie zaznaczony");}*/
+
+        String checked=driver.findElement((By.xpath("//span[@id='o0section-13-control≡grid-18-grid≡statement1-control']//label[@class='checkbox']/.."))).getAttribute("class");
+        System.out.println(checked);
+        if(checked.equals("xforms-deselected")){
+            System.out.println("niezaznaczony");
+        }else if (checked.equals("xforms-selected")) {
+            System.out.println("zaznaczony");
+        }
         safeClick(dataProcessingCheckbox);
+        checked=driver.findElement((By.xpath("//span[@id='o0section-13-control≡grid-18-grid≡statement1-control']//label[@class='checkbox']/.."))).getAttribute("class");
+        System.out.println(checked);
+        if(checked.equals("xforms-deselected")){
+            System.out.println("niezaznaczony");
+        }else if (checked.equals("xforms-selected")){
+            System.out.println("zaznaczony");
+        }
         safeClick(trueInformationCheckbox);
         safeClick(dataConfidentialityCheckbox);
+
+
+
     }
 
 

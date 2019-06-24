@@ -38,11 +38,36 @@ public class Utils {
             }
             attempts++;
         }
-        Assert.assertEquals(clicked,true, "exception");
+        if(attempts==2)
+            Assert.fail("cannot click on element");
     }
 
 
     public static void safeClick(WebElement element) {
+        //  boolean result = false;
+        int attempts = 0;
+        boolean clicked = false;
+        while(attempts < 2) {
+            try {
+                //  driver.findElement(by).click();
+                element.click();
+                clicked = true;
+                break;
+            } catch(StaleElementReferenceException e) {
+                System.out.println("StaleElementReferenceException occured on "+element);
+            } catch (NoSuchElementException e){
+                System.out.println("NoSuchElementException occured  on "+element);
+            } catch (ElementClickInterceptedException e){
+                System.out.println("ElementClickInterceptedException occured on "+element);
+            }
+            attempts++;
+        }
+        if(attempts==2)
+            Assert.fail("cannot click on element");
+    }
+
+
+    public static void safeCheckboxClick(WebElement element) {
         //  boolean result = false;
         int attempts = 0;
         boolean clicked = false;
@@ -59,14 +84,16 @@ public class Utils {
             } catch (ElementClickInterceptedException e){
                 System.out.println("ElementClickInterceptedException occured on "+element+", retrying in 100 ms ");
             }
+
             try {
                 Thread.sleep(150);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            attempts++;
+
         }
-       Assert.assertEquals(clicked,true, "exception");
+        if(attempts==2)
+            Assert.fail("cannot click on element");
     }
 
     public static void safeSelectRandomValueFromDropdown(WebElement element) {
@@ -98,7 +125,8 @@ public class Utils {
             }
             attempts++;
         }
-        Assert.assertEquals(clicked,true, "exception");
+        if(attempts==2)
+        Assert.fail("cannot click on element");
     }
 
     public static String generateRandomString(int n)

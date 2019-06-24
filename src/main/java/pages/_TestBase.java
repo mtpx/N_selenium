@@ -6,6 +6,8 @@ import org.openqa.selenium.support.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 
+import static utils.Utils.safeClick;
+
 public class _TestBase {
     public WebDriver driver;
     public WebDriverWait wait;
@@ -13,7 +15,7 @@ public class _TestBase {
     public _TestBase(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
-        wait = new WebDriverWait(driver, 5);
+     //   wait = new WebDriverWait(driver, 5);
         // Actions actions = new Actions(driver);
         // JavascriptExecutor jse = (JavascriptExecutor) driver;
     }
@@ -28,7 +30,7 @@ public class _TestBase {
 
     @Step("Przejście na stronę logowania")
     public void clickLogin() {
-        login.click();
+        safeClick(login);
     }
 
     @Step("Przejscie na podstrone 'programy'")
