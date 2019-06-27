@@ -28,6 +28,7 @@ public class HomePage extends _TestBase {
 
     @Step("Potwierdzenie usuniecia wniosku")
     public void clickConfirmDeleteApplication() {
+        wait.until(ExpectedConditions.visibilityOf(confirmDeleteApplicationButton));
         safeClick(confirmDeleteApplicationButton);
     }
 

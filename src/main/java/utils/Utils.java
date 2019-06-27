@@ -10,35 +10,33 @@ import org.testng.Assert;
 import java.util.List;
 import java.util.Random;
 
-public class Utils {
-
+public class Utils extends _TestBase {
+    public Utils(WebDriver driver){
+        super(driver);
+    }
 
     public static void safeSendKeys(WebElement element, String keys) {
         //  boolean result = false;
         int attempts = 0;
         boolean clicked = false;
-        while(attempts < 2) {
+        while(attempts < 4) {
             try {
                 //  driver.findElement(by).click();
                 element.clear();
                 element.sendKeys(keys);
                 clicked=true;
                 break;
-            } catch(StaleElementReferenceException e) {
-                System.out.println("StaleElementReferenceException occured on "+element+", retrying in 100 ms ");
-            } catch (NoSuchElementException e){
-                System.out.println("NoSuchElementException occured  on "+element+", retrying in 100 ms ");
-            } catch (ElementClickInterceptedException e){
-                System.out.println("ElementClickInterceptedException occured on "+element+", retrying in 100 ms ");
+            } catch(Exception e) {
+                System.out.println("exception occured on " + element + ", retrying in 100 ms ");
             }
             try {
-                Thread.sleep(150);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
             attempts++;
         }
-        if(attempts==2)
+        if(attempts==4)
             Assert.fail("cannot click on element");
     }
 
@@ -47,22 +45,23 @@ public class Utils {
         //  boolean result = false;
         int attempts = 0;
         boolean clicked = false;
-        while(attempts < 2) {
+        while(attempts < 4) {
             try {
                 //  driver.findElement(by).click();
                 element.click();
                 clicked = true;
                 break;
-            } catch(StaleElementReferenceException e) {
-                System.out.println("StaleElementReferenceException occured on "+element);
-            } catch (NoSuchElementException e){
-                System.out.println("NoSuchElementException occured  on "+element);
-            } catch (ElementClickInterceptedException e){
-                System.out.println("ElementClickInterceptedException occured on "+element);
+            } catch(Exception e) {
+                System.out.println("exception occured on " + element + ", retrying in 100 ms ");
             }
             attempts++;
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
-        if(attempts==2)
+        if(attempts==4)
             Assert.fail("cannot click on element");
     }
 
@@ -71,28 +70,24 @@ public class Utils {
         //  boolean result = false;
         int attempts = 0;
         boolean clicked = false;
-        while(attempts < 2) {
+        while(attempts < 4) {
             try {
                 //  driver.findElement(by).click();
                 element.click();
                 clicked = true;
                 break;
-            } catch(StaleElementReferenceException e) {
-                System.out.println("StaleElementReferenceException occured on "+element+", retrying in 100 ms ");
-            } catch (NoSuchElementException e){
-                System.out.println("NoSuchElementException occured  on "+element+", retrying in 100 ms ");
-            } catch (ElementClickInterceptedException e){
-                System.out.println("ElementClickInterceptedException occured on "+element+", retrying in 100 ms ");
+            } catch(Exception e) {
+                System.out.println("exception occured on " + element + ", retrying in 500 ms ");
             }
 
             try {
-                Thread.sleep(150);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
 
         }
-        if(attempts==2)
+        if(attempts==4)
             Assert.fail("cannot click on element");
     }
 
@@ -100,7 +95,7 @@ public class Utils {
         //  boolean result = false;
         int attempts = 0;
         boolean clicked = false;
-        while(attempts < 2) {
+        while(attempts < 4) {
             try {
                 //  driver.findElement(by).click();
                 Select dropdown = new Select(element);
@@ -111,21 +106,17 @@ public class Utils {
                 clicked = true;
                 break;
                 //   result = true;
-            } catch(StaleElementReferenceException e) {
-                System.out.println("StaleElementReferenceException occured on "+element+", retrying in 100 ms ");
-            } catch (NoSuchElementException e){
-                System.out.println("NoSuchElementException occured  on "+element+", retrying in 100 ms ");
-            } catch (ElementClickInterceptedException e){
-                System.out.println("ElementClickInterceptedException occured on "+element+", retrying in 100 ms ");
+            } catch(Exception e) {
+                System.out.println("exception occured on " + element + ", retrying in 500 ms ");
             }
             try {
-                Thread.sleep(150);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
             attempts++;
         }
-        if(attempts==2)
+        if(attempts==4)
         Assert.fail("cannot click on element");
     }
 

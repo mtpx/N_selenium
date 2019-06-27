@@ -1,14 +1,16 @@
 import com.github.javafaker.Faker;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Attachment;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
-import org.openqa.selenium.By;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.ITestContext;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import pages.*;
 import utils.Constant;
@@ -23,19 +25,25 @@ public class Tests {
     public WebDriver driver;
     Faker faker = new Faker();
 
+    @Attachment(value = "Page screenshot", type = "image/png")
+    public byte[] saveScreenshot(byte[] screenShot) {
+        return screenShot;
+    }
 
     @BeforeClass
     public void setUp() throws Exception {
+       // WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-blink-features=BlockCredentialedSubresources");
         options.addArguments("--disable-notifications");
         options.addArguments("--start-maximized");
         WebDriverManager.chromedriver().setup();
-    //    System.setProperty("webdriver.chrome.driver", Constant.driverPath);
+        //System.setProperty("webdriver.chrome.driver", Constant.driverPath);
         driver  = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
-
+        System.out.println("Window height: " + driver.manage().window().getSize().getHeight());
+        System.out.println("Window width: " + driver.manage().window().getSize().getWidth());
         // BasicConfigurator.configure();
 
 
@@ -44,7 +52,6 @@ public class Tests {
     public void beforeTest() {
 //        driver.manage().deleteAllCookies();
         //      driver.get(Constant.testurl);
-
     }
 
     @Test (enabled=true, priority=1, description="Logowanie")
@@ -69,7 +76,7 @@ public class Tests {
 
         objLogin.login("matpanx@gmail.com","Bmxheni@1");
 
-        Thread.sleep(4000);
+        Thread.sleep(2500);
 
 
     }
@@ -89,13 +96,15 @@ public class Tests {
         objExpertsApplication.clickPolishLanguageCheckbox();
         objExpertsApplication.clickSubmitApplicationButton();
         objExpertsApplication.clickSavingDraftTitleCloseButton();
-        Assert.assertEquals(objExpertsApplication.getvalidationErrorDialogBoxLabelText(),"Występują błędy walidacji. Proszę sprawdzić, czy wszystkie pola zostały wypełnione poprawnie.");
+        System.out.println("driver=" + driver);
+        objExpertsApplication.getValidationErrorDialogBoxLabelText();
+        Assert.assertEquals(objExpertsApplication.getValidationErrorDialogBoxLabelText(),"Występują błędy walidacji. Proszę sprawdzić, czy wszystkie pola zostały wypełnione poprawnie.");
         objExpertsApplication.clickOkOnValidationErrorDialogBox();
 
         Assert.assertEquals(objExpertsApplication.getBottomErrorHeaderText(),"Twój formularz zawiera 1 lub więcej błędów");
         objExpertsApplication.clickInterestedInNawaCheckbox();
         objExpertsApplication.selectRandomNawaProgram();
-        objExpertsApplication.selectSecondRandomNawaProgram();
+        //objExpertsApplication.selectSecondRandomNawaProgram();
 
         objExpertsApplication.setAcademicTitle(faker.streetSuffix());
         objExpertsApplication.setPhoneNumber("123456987");
@@ -122,9 +131,11 @@ public class Tests {
     public void test003_fillPolishLanguagePromotion(/*String name, String password, String password*/) throws Exception {
 
         // 1. Przejście do programow
-        HomePage objHomePage = new HomePage(driver);
-        objHomePage.clickPrograms();
 
+        HomePage objHomePage = new HomePage(driver);
+
+        objHomePage.clickPrograms();
+        objHomePage.acceptAlertIfPresent();
         Applications objApplications = new Applications(driver);
         objApplications.clickFillPolishLanguagePromotion();
 
@@ -170,7 +181,6 @@ public class Tests {
         Thread.sleep(4000);
 
     }
-
 
 
     @AfterClass

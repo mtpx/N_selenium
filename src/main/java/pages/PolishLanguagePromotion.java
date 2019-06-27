@@ -185,6 +185,7 @@ public class PolishLanguagePromotion extends _TestBase {
 
     @Step("Uzupelnienie tytulu projektu")
     public void setProjectTitle(String projectTitleInput){
+        wait.until(ExpectedConditions.visibilityOf(this.projectTitleInput));
         safeSendKeys(this.projectTitleInput,projectTitleInput);
     }
 

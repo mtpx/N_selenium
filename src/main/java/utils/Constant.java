@@ -1,7 +1,7 @@
 package utils;
 
 public class Constant {
-    public static final String driverPath = "drivers//chromedriver.exe";
+    //public static final String driverPath = "drivers//chromedriver.exe";
 
     public static final String testurl = "https://nawa.gov.pl/";
 
