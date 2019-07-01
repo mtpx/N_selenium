@@ -2,11 +2,153 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a748c44-1367-4a5e-917f-d9e01ab2dc9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/allure-results/03045eb8-f6ee-40e4-9aec-0801ec9e2063-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/056a8880-b051-4797-8396-768100e2aabe-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/059dac1b-0160-42cc-a266-021a56899794-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/06c20612-43ef-4e24-99b4-949e95124b8a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/071a23cd-758e-4b97-83e3-d3492f0e7707-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/0f0b4ab8-1788-45ca-a635-ef54d956c7da-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1215de0b-24a7-41eb-b35c-87c4a800269e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/14c88d0f-cb00-4d5d-b167-d0b4bb50af5a-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/15d03b33-1f21-4076-9fe9-0c9da669bad0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/16016a3e-5fb5-4181-88b9-18b3a3d32a52-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/19c61103-b47e-4281-a68a-21745df569de-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1a519c10-6fbf-489b-b9a0-ab9d0d6c024b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1d44cb7a-2d89-4bbe-a703-a2915f2587a9-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/2110ce61-6357-4200-a6b5-bb29c3dabdd7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/21f6f2cc-a1f3-491d-a5e1-3adba8bc7cd0-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/23b5fa1c-b1be-40d1-a7f8-637f621a3a41-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/243a2e21-9c71-4995-87a2-4411547780ab-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/2513b795-a059-450e-8a87-88a89af72b52-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/2b0ce2ad-5406-4f9f-ae26-d194f11b2a40-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/2e110edd-c4d3-4b66-8434-e623cdc30183-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/3367af53-a32d-4733-afc7-40bc6cfae9e0-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/368241b7-43ef-4825-a00d-dae622761c78-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/371753e7-d1fa-45fe-b6d2-d81f56b24b3d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/3bb72755-f51a-4b16-8eb5-a263d984bc79-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/3c346066-97d3-482b-aa0f-404d876b7729-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/3e544a84-6881-4f6b-afc7-2228935bda46-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/3f8f0302-45bd-47e7-b7d0-4dcccb1a276d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/42607e3f-c81b-4559-8531-20ae4ae688df-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/481688e9-e760-45d1-890e-f2f33b440c77-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/540131de-6e75-4757-9694-451dc57c7f90-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/554260fb-4304-4d5d-967b-703ce66d3180-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/56ce9db8-45d4-488f-a481-27acd05d625d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/5773e530-9c19-4be6-931b-5b78f99e404e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/59a1ea85-baf0-4704-8eea-dd7a55d47c48-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/5a25920a-6b35-45d1-98c4-7cf4bf1eb27c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/5b2a0f0f-b989-4960-8dfc-bafbb7d41483-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/60da2a4d-43ed-4313-9ebc-ed20d0090924-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/642d1136-3c44-4e40-a91c-c685cffdaf76-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/67eacd2b-e0b4-41e3-bab0-0e997406f771-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/69a36f43-9469-40af-87a3-1b69955be061-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/6ae47fe0-18bc-41b2-957d-ea4183e2c513-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/6b85caa3-c38b-48c2-8342-15d4a8571949-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/6dd41c44-8a43-4711-9436-7c65c3fe338b-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/71a68402-1a11-4829-bd40-b0ceea36ce13-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/71bd9056-9e38-40d7-85c2-0424028c8fbd-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/72314650-a92c-41a5-8224-380c20bcffcd-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/76fe52cf-d0ff-42d7-98cb-f1cf58253c09-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7840b618-43f2-4ca7-b4c7-44a2b02de294-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7a81a12e-c124-4614-b41b-d5b8c1e7496b-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7aa5dc8b-df52-412c-bc9d-c2ca7bbde649-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/80e2d93b-3589-4cdf-b4af-32258a81b361-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/81995ace-ea3d-4a01-85a8-63932841bd46-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/81c740f1-1f27-4ed2-b4c9-e19354148e87-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/84d47fad-5c3f-44e1-b324-34dc26f3c2b9-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8c81f623-000f-43a1-9bda-59a60ea26e57-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8cc13ae4-4e8a-4e58-8f48-d4e0aff4fff3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8e4edb6a-e737-48a3-a795-866202759000-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8fbbfa6b-d533-44ed-82ae-fc3362ac06e1-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/90a946e2-510e-4f54-91ed-d653d2c4515c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/921b2ba3-3386-483e-8ecc-489e6211bf08-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/92402711-d039-4eca-a1cf-9e2c84def02b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9548b459-8206-4be5-9ed9-82645f17223e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/96137bc5-4119-441d-9917-3f7273f62740-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9d6c68c6-a036-4dc3-92c5-722489ed93c9-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a0c7133f-c7da-40e3-bca0-8a0bf3517da4-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a4121ff5-a199-4218-a3fa-b7df8fb48c46-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a7ef640c-a983-4eb8-94a6-657208a2ccbf-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a8a2dd62-b78c-41b0-9e00-384dce768688-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ad00e245-67e8-4d42-af83-86b36278e47a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/aee8b08c-3844-43a9-9c4f-5a22c8e48bb5-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b2a5c9bb-4601-4506-bfe2-bfe245f6fc6b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b463c59c-259d-4cbd-94e6-b1931bf5d002-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b58b7eb3-e4e5-460c-93b6-b57f1a9b8652-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b5e3e4e7-6042-4c59-ab60-48e47f3c3b13-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/bc3afd5b-0b84-4fc6-bf8b-51431684b5d9-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/c117bafb-6604-4c21-8df8-e2ac28c17c62-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/c2a2e233-ac7b-479c-8b3e-275407fb6ed0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d2a72656-09bd-42fa-a4bb-7b39e2d1d14d-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d4aba5d8-8f7b-438d-b985-4189e152cb84-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d5674b7f-93d2-4304-be58-2db0ea572c0e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d607560c-8977-45ed-a406-1a2b3f5fb7e7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d7e5a541-1af8-4c75-a37d-644dc0f42374-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/da78d93d-22d0-48be-bedd-b8ec290e245f-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/dd40c8cc-d188-4f06-a665-09a1e3003ae2-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ddb456a5-2e68-4f3d-83bd-5dd54e6322d7-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e0a20f0f-cdb0-45fb-89e0-fa4832bbdea4-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e1343954-cf5f-4819-8aa3-89ef1f07081f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e188321c-63b5-4434-b1cd-0346008aabc7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e28878ab-1fce-4e3d-91aa-3e3face9f5da-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ea49cf2d-4451-4812-9c3e-6f6f4cafb706-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ef0db865-4092-48ed-b48d-418dcc9bf923-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/efc99f2f-4da1-4aa7-9261-bccb49e873cb-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f3ca2c3c-1618-4dbe-8705-6f491ca086e0-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f5142710-0a68-4385-8cd2-6f414e84d7f3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f605017d-e4a3-41a0-adb6-d0e01ff9c7cf-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f7354de6-f792-4d3c-b59f-cc1d1d0e33f3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/fc4b5e7a-2b4e-43d1-8f18-c6ee261196ad-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/fe21b63d-3e74-4282-a2f4-41719b9e68dc-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/utils/Log.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/Applications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/Applications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ExpertsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ExpertsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/_TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/_TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2019-06-27T12-41-43_775-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire/surefirebooter15059209399903078470.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/Applications.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/Applications.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/ExpertsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/ExpertsApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/_TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/_TestBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/failed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Tests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/tests/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/tests/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/tests/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/tests/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/tests/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/tests/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/tests/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/tests/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/tests/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/tests/tests.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/tests/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/passed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/skipped.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests/tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tests/tests.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,28 +167,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/_TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            <state relative-caret-position="147">
+              <caret line="32" column="76" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#861#862#0" expanded="true" />
-                <element signature="e#893#894#0" expanded="true" />
-                <element signature="e#1064#1065#0" expanded="true" />
-                <element signature="e#1111#1112#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
+                <element signature="e#954#955#0" expanded="true" />
+                <element signature="e#1004#1005#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,8 +181,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/Applications.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="409">
+              <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,12 +193,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="104" selection-start-line="104" selection-end-line="104" />
+            <state relative-caret-position="950">
+              <caret line="133" selection-start-line="133" selection-end-line="133" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1071#1072#0" expanded="true" />
-                <element signature="e#1104#1105#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,8 +205,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="25" column="17" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="17" />
+            <state relative-caret-position="185">
+              <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,7 +217,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/PolishLanguagePromotion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="976">
               <caret line="185" column="41" selection-start-line="185" selection-start-column="41" selection-end-line="185" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -105,10 +229,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="72" column="26" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
+            <state relative-caret-position="32">
+              <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/Log.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="29" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#267#268#0" expanded="true" />
+                <element signature="e#314#315#0" expanded="true" />
+                <element signature="e#407#408#0" expanded="true" />
+                <element signature="e#452#453#0" expanded="true" />
+                <element signature="e#500#501#0" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
+                <element signature="e#614#615#0" expanded="true" />
+                <element signature="e#663#664#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#746#747#0" expanded="true" />
+                <element signature="e#780#781#0" expanded="true" />
+                <element signature="e#829#830#0" expanded="true" />
+                <element signature="e#863#864#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,14 +272,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/ExpertsApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-58">
-              <caret line="156" column="39" selection-start-line="156" selection-start-column="34" selection-end-line="156" selection-end-column="39" />
+            <state relative-caret-position="134">
+              <caret line="193" column="17" selection-start-line="193" selection-start-column="11" selection-end-line="193" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6679#6680#0" expanded="true" />
-                <element signature="e#6748#6749#0" expanded="true" />
+                <element signature="e#9152#9153#0" expanded="true" />
                 <element signature="e#9202#9203#0" expanded="true" />
+                <element signature="e#9279#9280#0" expanded="true" />
                 <element signature="e#9322#9323#0" expanded="true" />
+                <element signature="e#9942#9943#0" expanded="true" />
                 <element signature="e#9994#9995#0" expanded="true" />
               </folding>
             </state>
@@ -143,8 +290,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1248">
-              <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+            <state relative-caret-position="361">
+              <caret line="85" column="62" selection-start-line="85" selection-start-column="62" selection-end-line="85" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -173,6 +320,9 @@
       <find>assert</find>
       <find>losowego z</find>
       <find>check</find>
+      <find>log</find>
+      <find>zapisz</find>
+      <find>after</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -182,20 +332,21 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/testng.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/Applications.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/TestListener.java" />
         <option value="$PROJECT_DIR$/src/test/java/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/OnFailure.java" />
         <option value="$PROJECT_DIR$/src/test/java/WebDriverSteps.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/HomePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/PolishLanguagePromotion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/Constant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/Log.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/utils/Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/ExpertsApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/Constant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/HomePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/_TestBase.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Tests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/Applications.java" />
       </list>
     </option>
   </component>
@@ -286,7 +437,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../N" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.51954025" />
@@ -408,7 +559,7 @@
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1608" height="880" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2254522" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22868218" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -505,57 +656,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/TestListener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/TestListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/BaseTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/WebDriverSteps.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/OnFailure.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="288">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
           <folding>
-            <element signature="e#1065#1066#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
-            <element signature="e#1232#1233#0" expanded="true" />
-            <element signature="e#1259#1260#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BaseTest.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="361">
+          <caret line="85" column="62" selection-start-line="85" selection-start-column="62" selection-end-line="85" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/WebDriverSteps.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#962#963#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/OnFailure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="32">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -566,19 +693,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Utils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Log.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="72" column="26" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
+        <state relative-caret-position="112">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/ExpertsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="193" column="17" selection-start-line="193" selection-start-column="11" selection-end-line="193" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#9152#9153#0" expanded="true" />
+            <element signature="e#9202#9203#0" expanded="true" />
+            <element signature="e#9279#9280#0" expanded="true" />
+            <element signature="e#9322#9323#0" expanded="true" />
+            <element signature="e#9942#9943#0" expanded="true" />
+            <element signature="e#9994#9995#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/PolishLanguagePromotion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="976">
           <caret line="185" column="41" selection-start-line="185" selection-start-column="41" selection-end-line="185" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -586,68 +742,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/ExpertsApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58">
-          <caret line="156" column="39" selection-start-line="156" selection-start-column="34" selection-end-line="156" selection-end-column="39" />
+        <state relative-caret-position="185">
+          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6679#6680#0" expanded="true" />
-            <element signature="e#6748#6749#0" expanded="true" />
-            <element signature="e#9202#9203#0" expanded="true" />
-            <element signature="e#9322#9323#0" expanded="true" />
-            <element signature="e#9994#9995#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/_TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        <state relative-caret-position="147">
+          <caret line="32" column="76" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#893#894#0" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-            <element signature="e#1111#1112#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1248">
-          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/Applications.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="409">
+          <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -656,12 +776,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        <state relative-caret-position="950">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1071#1072#0" expanded="true" />
-            <element signature="e#1104#1105#0" expanded="true" />
           </folding>
         </state>
       </provider>

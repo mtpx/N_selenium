@@ -1,5 +1,6 @@
 pages\PolishLanguagePromotion.class
 pages\_TestBase.class
+utils\Log.class
 utils\Utils.class
 pages\ExpertsApplication.class
 pages\HomePage.class

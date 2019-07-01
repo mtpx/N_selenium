@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-tests" class="navigator-link">
-              <span class="suite-name border-failed">tests</span>
+              <span class="suite-name border-passed">tests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-tests" class="hide-methods failed suite-tests"> (hide)</a> <!-- hide-methods failed suite-tests -->
-                      <a href="#" panel-name="suite-tests" class="show-methods failed suite-tests"> (show)</a> <!-- show-methods failed suite-tests -->
-                    </span>
-                    <div class="method-list-content failed suite-tests">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-tests" title="Tests" class="method navigator-link" hash-for-method="test002_fillExpertsApplication">test002_fillExpertsApplication</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-tests -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,6 +103,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-tests" title="Tests" class="method navigator-link" hash-for-method="test001_logowanie">test001_logowanie</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-tests" title="Tests" class="method navigator-link" hash-for-method="test002_fillExpertsApplication">test002_fillExpertsApplication</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -136,27 +127,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-tests" class="panel tests">
-          <div class="suite-tests-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Tests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test002_fillExpertsApplication">
-                  </a> <!-- test002_fillExpertsApplication -->
-                  <span class="method-name">test002_fillExpertsApplication</span>
-                  <div class="stack-trace">java.lang.AssertionError: cannot click on element
-	at utils.Utils.safeClick(Utils.java:65)
-	at pages.ExpertsApplication.clickPolishLanguageCheckbox(ExpertsApplication.java:82)
-	at Tests.test002_fillExpertsApplication(Tests.java:105)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-tests-class-failed -->
           <div class="suite-tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -170,6 +140,13 @@
                   <span class="method-name">test001_logowanie</span>
                   <em>
 (Logowanie)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test002_fillExpertsApplication">
+                  </a> <!-- test002_fillExpertsApplication -->
+                  <span class="method-name">test002_fillExpertsApplication</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -237,15 +214,15 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test003_fillPolishLanguagePromotion')
 data.setCell(0, 2, 'Tests')
-data.setCell(0, 3, 56426);
+data.setCell(0, 3, 64164);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test001_logowanie')
+data.setCell(1, 1, 'test002_fillExpertsApplication')
 data.setCell(1, 2, 'Tests')
-data.setCell(1, 3, 13805);
+data.setCell(1, 3, 23133);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test002_fillExpertsApplication')
+data.setCell(2, 1, 'test001_logowanie')
 data.setCell(2, 2, 'Tests')
-data.setCell(2, 3, 5083);
+data.setCell(2, 3, 13607);
 window.suiteTableData['tests']= { tableData: data, tableDiv: 'times-div-tests'}
 return data;
 }
@@ -283,33 +260,43 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">3048 ms</span>
+                <span class="method-start">5125 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test001_logowanie</span>
-                <span class="method-start">3169 ms</span>
+                <span class="method-start">5250 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown([TestResult name=test001_logowanie status=SUCCESS method=Tests.test001_logowanie()[pri:1, instance:T...)</span>
+                <span class="method-start">18891 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">17008 ms</span>
+                <span class="method-start">18907 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">test002_fillExpertsApplication</span>
-                <span class="method-start">17011 ms</span>
+                <span class="method-start">18907 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown([TestResult name=test002_fillExpertsApplication status=SUCCESS method=Tests.test002_fillExpertsAppli...)</span>
+                <span class="method-start">42048 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">22120 ms</span>
+                <span class="method-start">42050 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test003_fillPolishLanguagePromotion</span>
-                <span class="method-start">22122 ms</span>
+                <span class="method-start">42051 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown([TestResult name=test003_fillPolishLanguagePromotion status=SUCCESS method=Tests.test003_fillPolishL...)</span>
+                <span class="method-start">106223 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">78564 ms</span>
+                <span class="method-start">106226 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

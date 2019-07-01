@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import utils.Log;
+
 import static utils.Utils.*;
 public class HomePage extends _TestBase {
     public HomePage(WebDriver driver){
@@ -32,6 +34,15 @@ public class HomePage extends _TestBase {
         safeClick(confirmDeleteApplicationButton);
     }
 
+    @Step("Usun istniejace wnioski")
+    public void deleteExistingApplications() {
+        try{
+            deleteFirstApplicationButton.click();
+            wait.until(ExpectedConditions.elementToBeClickable(confirmDeleteApplicationButton));
+            confirmDeleteApplicationButton.click();
+        }catch(Exception e){
+            Log.info("brak wnioskow do edycji");
+        }
+    }
+
 }
-//button[@id='j_idt122:applicationTable:0:j_idt162']
-//button[@id='j_idt122:applicationTable:1:j_idt162']

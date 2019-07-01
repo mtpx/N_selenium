@@ -2,85 +2,76 @@ import com.github.javafaker.Faker;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Attachment;
 import io.qameta.allure.Description;
-import io.qameta.allure.Step;
+import org.apache.commons.io.FileUtils;
+import org.apache.log4j.BasicConfigurator;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
-import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import org.openqa.selenium.chrome.ChromeOptions;
 import pages.*;
 import utils.Constant;
-
-
-import java.util.Locale;
-import java.util.concurrent.TimeUnit;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import utils.Log;
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import static utils.Utils.*;
 
 public class Tests {
     public WebDriver driver;
     Faker faker = new Faker();
-    private static final Logger log = LogManager.getLogger(Tests.class);
-
-    @Attachment(value = "Page screenshot", type = "image/png")
-    public byte[] saveScreenshot(byte[] screenShot) {
-        return screenShot;
-    }
 
     @BeforeClass
     public void setUp() throws Exception {
-       // WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-blink-features=BlockCredentialedSubresources");
         options.addArguments("--disable-notifications");
         options.addArguments("--no-sandbox");
         options.addArguments("--start-maximized");
-        options.addArguments("--headless");
-        options.addArguments("window-size=1920,1080");
+        //options.addArguments("--headless");
+        options.addArguments("window-size=1600,900");
         WebDriverManager.chromedriver().setup();
-        //System.setProperty("webdriver.chrome.driver", Constant.driverPath);
         driver  = new ChromeDriver(options);
+    //    WebDriverManager.firefoxdriver().setup();
+     //   driver  = new FirefoxDriver();
         //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.manage().deleteAllCookies();
-        //driver.manage().window().setSize(new Dimension(1024, 768))
         System.out.println("Window height: " + driver.manage().window().getSize().getHeight());
         System.out.println("Window width: " + driver.manage().window().getSize().getWidth());
-        // BasicConfigurator.configure();
+        BasicConfigurator.configure();
+        driver.manage().deleteAllCookies();
+
+
 
 
     }
     @BeforeMethod
     public void beforeTest() {
-//        driver.manage().deleteAllCookies();
-        //      driver.get(Constant.testurl);
+
     }
 
     @Test (enabled=true, priority=1, description="Logowanie")
     @Description("Logowanie: bez danych/logowanie poprawne")
-    //@Parameters({ "name", "phone", "password", "001regFeedback", "blankValidationError" })
-    public void test001_logowanie(/*String name, String password, String password*/) throws Exception {
+    public void test001_logowanie() throws Exception {
 
 
         driver.get(Constant.testurl);
 
-        log.info("1. Przejscie na strone logowania");
+        Log.error("1. Przejscie na strone logowania");
+        System.out.println("1. Przejscie na strone logowania");
         _TestBase obj_TestBase = new _TestBase(driver);
         obj_TestBase.clickLogin();
 
-        log.info("2. Logowanie bez danych");
+        Log.error("2. Logowanie bez danych");
         Login objLogin = new Login(driver);
         objLogin.login("","");
         Assert.assertEquals(objLogin.getErrorMessage(), "Pole Email jest wymagane.");
         Assert.assertEquals(objLogin.getSecondErrorMessage(), "Pole Hasło jest wymagane.");
 
-        log.info("3. Poprawne logowanie");
-
+        Log.info("3. Poprawne logowanie");
         objLogin.login("matpanx@gmail.com","Bmxheni@1");
 
         Thread.sleep(2500);
@@ -89,14 +80,14 @@ public class Tests {
     }
 
     @Test (enabled=true, priority=1)
-    //@Parameters({ "name", "phone", "password", "001regFeedback", "blankValidationError" })
-    public void test002_fillExpertsApplication(/*String name, String password, String password*/) throws Exception {
+    public void test002_fillExpertsApplication() throws Exception {
 
-        log.info("1. Przejscie do programow");
+        Log.info("1. Przejscie do programow");
         HomePage objHomePage = new HomePage(driver);
+        objHomePage.deleteExistingApplications();
         objHomePage.clickPrograms();
 
-        log.info("2. przejscie do expert application");
+        Log.info("2. przejscie do expert application");
         Applications objApplications = new Applications(driver);
         objApplications.clickFillExpertsApplication();
 
@@ -104,7 +95,6 @@ public class Tests {
         objExpertsApplication.clickPolishLanguageCheckbox();
         objExpertsApplication.clickSubmitApplicationButton();
         objExpertsApplication.clickSavingDraftTitleCloseButton();
-        System.out.println("driver=" + driver);
         objExpertsApplication.getValidationErrorDialogBoxLabelText();
         Assert.assertEquals(objExpertsApplication.getValidationErrorDialogBoxLabelText(),"Występują błędy walidacji. Proszę sprawdzić, czy wszystkie pola zostały wypełnione poprawnie.");
         objExpertsApplication.clickOkOnValidationErrorDialogBox();
@@ -121,12 +111,12 @@ public class Tests {
         objExpertsApplication.clickRequiredCheckboxes();
 
 
-        log.info("3. Zapisywanie kopii roboczej");
+        Log.info("3. Zapisywanie kopii roboczej");
         objExpertsApplication.clickSaveAsCopyButton();
         //objExpertsApplication.waitForDraftSavedTitleToDisappear();
-        Thread.sleep(3000);
+        Thread.sleep(4000);
 
-        log.info("4. Usuwanie formularza");
+        Log.info("4. Usuwanie formularza");
         objExpertsApplication.clickMyApplications();
         objHomePage.clickDeleteFirstApplication();
         objHomePage.clickConfirmDeleteApplication();
@@ -136,24 +126,24 @@ public class Tests {
 
 
     @Test (enabled=true, priority=1)
-    //@Parameters({ "name", "phone", "password", "001regFeedback", "blankValidationError" })
-    public void test003_fillPolishLanguagePromotion(/*String name, String password, String password*/) throws Exception {
+    public void test003_fillPolishLanguagePromotion() throws Exception {
 
-        log.info("1. Przejście do programow");
+        Log.info("1. Przejście do programow");
         HomePage objHomePage = new HomePage(driver);
+        objHomePage.deleteExistingApplications();
         objHomePage.clickPrograms();
         objHomePage.acceptAlertIfPresent();
 
-        log.info("2. Wypełanie wniosku promocja jezyka polskiego");
+        Log.info("2. Wypełanie wniosku promocja jezyka polskiego");
         Applications objApplications = new Applications(driver);
         objApplications.clickFillPolishLanguagePromotion();
 
-        log.info("3. Wypełanie pierwszej strony wniosku");
+        Log.info("3. Wypełanie pierwszej strony wniosku");
         PolishLanguagePromotion objPolishLanguagePromotion = new PolishLanguagePromotion(driver);
         objPolishLanguagePromotion.setProjectRealizationPlace(faker.streetSuffix());
         objPolishLanguagePromotion.clickNextPageOfApplication();
 
-        log.info("4. Wypełanie drugiej strony wniosku");
+        Log.info("4. Wypełanie drugiej strony wniosku");
         objPolishLanguagePromotion.selectRandomUnitStatus();
         objPolishLanguagePromotion.selectRandomUnitFullName();
         objPolishLanguagePromotion.setNip("1165830299");
@@ -165,10 +155,10 @@ public class Tests {
         objPolishLanguagePromotion.setDescriptionOfApplicant(getLongDescription());
         objPolishLanguagePromotion.setExperienceOfApplicant(generateRandomString(1010));
 
-        log.info("5. Wypełanie trzeciej strony wniosku");
+        Log.info("5. Wypełanie trzeciej strony wniosku");
         objPolishLanguagePromotion.clickNextPageOfApplication();
 
-        log.info("5. Wypełanie czwartej strony wniosku");
+        Log.info("5. Wypełanie czwartej strony wniosku");
         objPolishLanguagePromotion.clickNextPageOfApplication();
         objPolishLanguagePromotion.setProjectTitle(generateRandomString(15));
         objPolishLanguagePromotion.setProjectStartDate("2019-10-09");
@@ -194,6 +184,18 @@ public class Tests {
 
         Thread.sleep(4000);
 
+    }
+
+    @AfterMethod
+    public void TearDown(ITestResult result) throws IOException {
+
+        if (result.getStatus() == ITestResult.FAILURE ){
+            TakesScreenshot ts = (TakesScreenshot)driver;
+            String timeStamp = new SimpleDateFormat("yyyyMMddHHmm").format(new Date());
+            String date = new SimpleDateFormat("yyyyMMdd").format(new Date());
+            File srcFile = ts.getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(srcFile, new File("./failureScreenShots/"+date+"/"+result.getName()+"_"+timeStamp+".jpg"));
+        }
     }
 
 
