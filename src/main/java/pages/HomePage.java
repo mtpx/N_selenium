@@ -30,8 +30,8 @@ public class HomePage extends _TestBase {
 
     @Step("Potwierdzenie usuniecia wniosku")
     public void clickConfirmDeleteApplication() {
-        wait.until(ExpectedConditions.visibilityOf(confirmDeleteApplicationButton));
         safeClick(confirmDeleteApplicationButton);
+        wait.until(ExpectedConditions.invisibilityOf(confirmDeleteApplicationButton));
     }
 
     @Step("Usun istniejace wnioski")
@@ -40,6 +40,7 @@ public class HomePage extends _TestBase {
             deleteFirstApplicationButton.click();
             wait.until(ExpectedConditions.elementToBeClickable(confirmDeleteApplicationButton));
             confirmDeleteApplicationButton.click();
+            wait.until(ExpectedConditions.invisibilityOf(confirmDeleteApplicationButton));
         }catch(Exception e){
             Log.info("brak wnioskow do edycji");
         }

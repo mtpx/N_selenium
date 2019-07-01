@@ -9,12 +9,45 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">tests</th></tr>
-<tr><td><a href="#t0">tests</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">106 883</td><td></td><td></td></tr>
+<tr><td><a href="#t0">tests</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">94 417</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">tests</th></tr></tbody><tbody id="t0"><tr><th colspan="4">tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Tests</td><td><a href="#m0">test001_logowanie</a></td><td rowspan="1">1561989512590</td><td rowspan="1">13607</td></tr><tr class="passedeven"><td><a href="#m1">test002_fillExpertsApplication</a></td><td rowspan="1">1561989526247</td><td rowspan="1">23133</td></tr><tr class="passedeven"><td><a href="#m2">test003_fillPolishLanguagePromotion</a></td><td rowspan="1">1561989549391</td><td rowspan="1">64164</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">tests</th></tr></tbody><tbody id="t0"><tr><th colspan="4">tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Tests</td><td><a href="#m0">test002_fillExpertsApplication</a></td><td rowspan="1">1561995705679</td><td rowspan="1">15056</td></tr><tr><th colspan="4">tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">Tests</td><td><a href="#m1">test001_logowanie</a></td><td rowspan="1">1561995691251</td><td rowspan="1">14393</td></tr><tr class="passedeven"><td><a href="#m2">test003_fillPolishLanguagePromotion</a></td><td rowspan="1">1561995721088</td><td rowspan="1">60442</td></tr></tbody>
 </table>
-<h2>tests</h2><h3 id="m0">Tests#test001_logowanie</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Tests#test002_fillExpertsApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>tests</h2><h3 id="m0">Tests#test002_fillExpertsApplication</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: #o0fr-error-dialog≡xf-3421&apos; (tried for 5 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at pages.ExpertsApplication.getValidationErrorDialogBoxLabelText(ExpertsApplication.java:209)
+	at Tests.test002_fillExpertsApplication(Tests.java:98)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#o0fr-error-dialog≡xf-3421&quot;}
+  (Session info: headless chrome=75.0.3770.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MK-PC&apos;, ip: &apos;192.168.43.190&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\mk\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62761}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4e719970a316b15fceb95985249054b8
+*** Element info: {Using=css selector, value=#o0fr-error-dialog≡xf-3421}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests#test001_logowanie</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">Tests#test003_fillPolishLanguagePromotion</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

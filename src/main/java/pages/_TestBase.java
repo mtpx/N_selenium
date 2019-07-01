@@ -39,7 +39,7 @@ public class _TestBase {
 
     @Step("Przejscie na podstrone 'programy'")
     public void clickPrograms() {
-        safeClick(applicationsMenu.get(0));
+        applicationsMenu.get(0).click();
     }
 
 

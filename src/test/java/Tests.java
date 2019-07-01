@@ -32,7 +32,7 @@ public class Tests {
         options.addArguments("--disable-notifications");
         options.addArguments("--no-sandbox");
         options.addArguments("--start-maximized");
-        //options.addArguments("--headless");
+        options.addArguments("--headless");
         options.addArguments("window-size=1600,900");
         WebDriverManager.chromedriver().setup();
         driver  = new ChromeDriver(options);

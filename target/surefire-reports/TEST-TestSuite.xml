@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="108.906" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="96.059" tests="3" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -64,7 +64,38 @@
     <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.6.1\bin\..\lib\jansi-native"/>
     <property name="java.class.version" value="56.0"/>
   </properties>
-  <testcase name="test001_logowanie" classname="Tests" time="13.607"/>
-  <testcase name="test002_fillExpertsApplication" classname="Tests" time="23.134"/>
-  <testcase name="test003_fillPolishLanguagePromotion" classname="Tests" time="64.163"/>
+  <testcase name="test001_logowanie" classname="Tests" time="14.359"/>
+  <testcase name="test002_fillExpertsApplication" classname="Tests" time="15.074">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: #o0fr-error-dialog≡xf-3421&apos; (tried for 5 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: #o0fr-error-dialog≡xf-3421' (tried for 5 second(s) with 500 milliseconds interval)
+	at Tests.test002_fillExpertsApplication(Tests.java:98)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#o0fr-error-dialog≡xf-3421"}
+  (Session info: headless chrome=75.0.3770.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MK-PC', ip: '192.168.43.190', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\mk\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62761}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4e719970a316b15fceb95985249054b8
+*** Element info: {Using=css selector, value=#o0fr-error-dialog≡xf-3421}
+	at Tests.test002_fillExpertsApplication(Tests.java:98)
+</failure>
+    <system-out><![CDATA[10294 [main] INFO utils.Log  - 1. Przejscie do programow
+10325 [main] INFO utils.Log  - brak wnioskow do edycji
+10378 [main] INFO utils.Log  - 2. przejscie do expert application
+exception occured on Proxy element for: DefaultElementLocator 'By.cssSelector: #o0section-15-control?grid-1-grid?choose_language-control??e0 + span', retrying in 100 ms 
+exception occured on Proxy element for: DefaultElementLocator 'By.cssSelector: #o0section-15-control?grid-1-grid?choose_language-control??e0 + span', retrying in 100 ms 
+exception occured on Proxy element for: DefaultElementLocator 'By.cssSelector: #o0section-15-control?grid-1-grid?choose_language-control??e0 + span', retrying in 100 ms 
+exception occured on Proxy element for: DefaultElementLocator 'By.cssSelector: #o0section-15-control?grid-1-grid?choose_language-control??e0 + span', retrying in 100 ms 
+exception occured on Proxy element for: DefaultElementLocator 'By.cssSelector: #o0xf-549?xf-3408?xf-3414??c?3', retrying in 100 ms 
+exception occured on Proxy element for: DefaultElementLocator 'By.cssSelector: #o0xf-549?xf-3408?xf-3414??c?3', retrying in 100 ms 
+exception occured on Proxy element for: DefaultElementLocator 'By.cssSelector: #o0xf-549?xf-3408?xf-3414??c?3', retrying in 100 ms 
+exception occured on Proxy element for: DefaultElementLocator 'By.cssSelector: #o0xf-549?xf-3408?xf-3414??c?3', retrying in 100 ms 
+exception occured on Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='ui-growl-icon-close ui-icon ui-icon-closethick']', retrying in 100 ms 
+exception occured on Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='ui-growl-icon-close ui-icon ui-icon-closethick']', retrying in 100 ms 
+exception occured on Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='ui-growl-icon-close ui-icon ui-icon-closethick']', retrying in 100 ms 
+exception occured on Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='ui-growl-icon-close ui-icon ui-icon-closethick']', retrying in 100 ms 
+]]></system-out>
+  </testcase>
+  <testcase name="test003_fillPolishLanguagePromotion" classname="Tests" time="60.448"/>
 </testsuite>

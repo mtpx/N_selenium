@@ -57,10 +57,8 @@ public class Utils extends _TestBase {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }
-        if(attempts==4)
-            Assert.fail("cannot click on element");
-    }
+        }}
+
 
 
     public static void safeCheckboxClick(WebElement element) {

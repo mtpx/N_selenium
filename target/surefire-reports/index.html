@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-tests" class="navigator-link">
-              <span class="suite-name border-passed">tests</span>
+              <span class="suite-name border-failed">tests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-tests" class="hide-methods failed suite-tests"> (hide)</a> <!-- hide-methods failed suite-tests -->
+                      <a href="#" panel-name="suite-tests" class="show-methods failed suite-tests"> (show)</a> <!-- show-methods failed suite-tests -->
+                    </span>
+                    <div class="method-list-content failed suite-tests">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-tests" title="Tests" class="method navigator-link" hash-for-method="test002_fillExpertsApplication">test002_fillExpertsApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-tests -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,11 +117,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-tests" title="Tests" class="method navigator-link" hash-for-method="test001_logowanie">test001_logowanie</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-tests" title="Tests" class="method navigator-link" hash-for-method="test002_fillExpertsApplication">test002_fillExpertsApplication</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -127,6 +136,56 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-tests" class="panel tests">
+          <div class="suite-tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test002_fillExpertsApplication">
+                  </a> <!-- test002_fillExpertsApplication -->
+                  <span class="method-name">test002_fillExpertsApplication</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: #o0fr-error-dialog≡xf-3421&apos; (tried for 5 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at pages.ExpertsApplication.getValidationErrorDialogBoxLabelText(ExpertsApplication.java:209)
+	at Tests.test002_fillExpertsApplication(Tests.java:98)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#o0fr-error-dialog≡xf-3421&quot;}
+  (Session info: headless chrome=75.0.3770.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MK-PC&apos;, ip: &apos;192.168.43.190&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\mk\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62761}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4e719970a316b15fceb95985249054b8
+*** Element info: {Using=css selector, value=#o0fr-error-dialog≡xf-3421}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-tests-class-failed -->
           <div class="suite-tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -140,13 +199,6 @@
                   <span class="method-name">test001_logowanie</span>
                   <em>
 (Logowanie)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test002_fillExpertsApplication">
-                  </a> <!-- test002_fillExpertsApplication -->
-                  <span class="method-name">test002_fillExpertsApplication</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -214,15 +266,15 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test003_fillPolishLanguagePromotion')
 data.setCell(0, 2, 'Tests')
-data.setCell(0, 3, 64164);
+data.setCell(0, 3, 60442);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test002_fillExpertsApplication')
 data.setCell(1, 2, 'Tests')
-data.setCell(1, 3, 23133);
+data.setCell(1, 3, 15056);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test001_logowanie')
 data.setCell(2, 2, 'Tests')
-data.setCell(2, 3, 13607);
+data.setCell(2, 3, 14393);
 window.suiteTableData['tests']= { tableData: data, tableDiv: 'times-div-tests'}
 return data;
 }
@@ -260,43 +312,45 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">5125 ms</span>
+                <span class="method-start">3420 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test001_logowanie</span>
-                <span class="method-start">5250 ms</span>
+                <span class="method-start">3539 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown([TestResult name=test001_logowanie status=SUCCESS method=Tests.test001_logowanie()[pri:1, instance:T...)</span>
-                <span class="method-start">18891 ms</span>
+                <span class="method-start">17960 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">18907 ms</span>
+                <span class="method-start">17966 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">test002_fillExpertsApplication</span>
-                <span class="method-start">18907 ms</span>
+                <span class="method-start">17967 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">TearDown([TestResult name=test002_fillExpertsApplication status=SUCCESS method=Tests.test002_fillExpertsAppli...)</span>
-                <span class="method-start">42048 ms</span>
+                <span class="method-name">TearDown([TestResult name=test002_fillExpertsApplication status=FAILURE method=Tests.test002_fillExpertsAppli...)</span>
+                <span class="method-start">33042 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">42050 ms</span>
+                <span class="method-start">33375 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test003_fillPolishLanguagePromotion</span>
-                <span class="method-start">42051 ms</span>
+                <span class="method-start">33376 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown([TestResult name=test003_fillPolishLanguagePromotion status=SUCCESS method=Tests.test003_fillPolishL...)</span>
-                <span class="method-start">106223 ms</span>
+                <span class="method-start">93826 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">106226 ms</span>
+                <span class="method-start">93830 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
